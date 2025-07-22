@@ -32,6 +32,7 @@ h1, h2 {
 }
 
 .modal {
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
@@ -40,19 +41,11 @@ h1, h2 {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgba(0,0,0,0.5); /* Slightly darker overlay */
-    padding: 20px; /* Add some padding for smaller screens */
-    box-sizing: border-box;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.modal.open {
-    display: flex; /* Use flexbox for centering when open */
+    display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1;
-    visibility: visible;
+    padding: 20px; /* Add some padding for smaller screens */
+    box-sizing: border-box;
 }
 
 .modal-content {
