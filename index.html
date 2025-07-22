@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Iris y Miguel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>¡Bienvenido a la boda de <span class="script">Iris y Miguel</span>!</h2>
+            <p>Por favor, ingresa tu nombre para continuar:</p>
+            <input type="text" id="nombreInput" placeholder="Tu nombre">
+            <button id="submitNombre">Entrar</button>
+        </div>
+    </div>
+
+    <div id="content" class="content">
+        <h1 class="script">¡Gracias por venir a nuestra boda!</h1>
+        <p><span id="nombreUsuario" class="bold"></span>, esperamos que disfrutes de este día tan especial con nosotros.
+        </p>
+        <p><span class="bold"></span>Mateo 19:6 Así que no son ya más dos, sino una sola carne; por tanto, lo que Dios
+            juntó, no lo separe el hombre.
+        </p>
+        <div class="media-wrapper">
+            <button id="thankYouButton">Ver Mensaje de Agradecimiento</button>
+            <h1 class="script">¡Miguel e Iris!</h1>
+            <img src="https://i.imgur.com/x1GGzHa.jpeg" alt="Imagen de la boda" id="weddingImage">
+        </div>
+        <div id="heartRainContainer"></div>
+
+        <div id="thankYouModal" class="modal">
+            <div class="modal-content">
+                
+                <h2>¡Nuestro más sincero agradecimiento!</h2>
+                <p>Querido(a) <span id="thankYouName" class="bold"></span>,</p>
+                <p>
+                    Desde lo más profundo de nuestro corazón, queremos agradecerte por acompañarnos en uno de los días
+                    más significativos de nuestras vidas. Tu presencia no solo llenó de alegría nuestro corazón, sino
+                    que también dio un valor aún más especial a cada instante vivido.
+                    Compartir este momento tan íntimo y sagrado con personas como tú, que han caminado junto a nosotros
+                    en diferentes etapas de la vida, fue un verdadero regalo. Tu cariño, tus palabras y tu compañía
+                    quedarán grabados en nuestra memoria con gratitud y amor.
+                    Gracias por ser parte no solo de nuestra boda, sino de nuestra historia. Nos sentimos bendecidos de
+                    contar con tu amistad y apoyo incondicional, Dios te bendiga.
+                </p>
+                <p class="signature">Con todo nuestro cariño,<br>Miguel e Iris 💖</p>
+                <button id="closeThankYouModal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://api.whatsapp.com/send/?phone=%2B51921263459&text&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/edson_yovera/"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/edson.yovera23"><i class="fab fa-facebook"></i></a>
+        </div>
+        <div class="copyright">
+            <p>Creado por Edson Yovera © Derechos Reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
